@@ -11,9 +11,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 1px;
-    
 }
 /*Barconten1 work*/
 .barcontent1{
@@ -167,3 +164,4 @@ margin-left: 30px;
     text-decoration: none;
     color: white;
 }
+
