@@ -110,7 +110,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    background-color: #f0f2f5;
+    /*background-color: #f0f2f5;*/
     font-size: 20px;
 }
 .english{
@@ -171,5 +171,6 @@ margin-left: 30px;
     text-decoration: none;
     color: white;
 }
+
 
 
