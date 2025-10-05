@@ -171,6 +171,27 @@ margin-left: 30px;
     text-decoration: none;
     color: white;
 }
+/*Note section*/
+.inlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.note_box{
+    border: 2px solid black;
+    height: 150px;
+    width: 17%;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.note_box a {
+     text-decoration: none;
+     color: black;
+}
 
 
 
