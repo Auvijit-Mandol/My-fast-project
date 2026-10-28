@@ -1,122 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Unlock Knowledge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Unlock Knowledge — curated learning resources, courses and notes in one place.">
+  <title>Unlock Knowledge | Learn Smarter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data/resources.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <!--Navebar Section-->
-    <div class="navbar">
-      <div class="barcontent1">
-        <div class="logo border"></div>
-        <p class="border">Unlock Knowledge</p>
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="index.html"><img src="Logo.jpg" alt="Unlock Knowledge logo"><span>Unlock Knowledge</span></a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <div class="nav-links"><a class="active" href="index.html">Home</a><a href="#categories">Index</a><a href="Note.html">Notes</a></div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">LEARN • EXPLORE • GROW</span>
+        <h1>Learning resources,<br><span>all in one place.</span></h1>
+        <p>Unlock Knowledge organizes useful websites, courses, tools and notes so you can spend less time searching and more time learning.</p>
+        <div class="hero-actions"><a class="btn primary" href="#categories">Explore categories</a><a class="btn secondary" href="Note.html">Browse notes</a></div>
+        <div class="stats"><div><strong id="categoryCount">0</strong><small>Categories</small></div><div><strong id="resourceCount">0</strong><small>Resources</small></div><div><strong>Free</strong><small>To explore</small></div></div>
       </div>
-      <div class="barcontent2">
-        <a href="index.html" class="border">Home</a>
-        <a href="#content-list" class="border">Index</a>
-        <a href="Note.html"class="border">Notes</a>
+      <div class="hero-card">
+        <img src="Logo.jpg" alt="Unlock Knowledge">
+        <h2>Our Vision</h2>
+        <p>To make learning convenient with the internet.</p>
       </div>
     </div>
-    <!--Index Section-->
-    <div class="index">
-      <div class="indxcon1">
-             <img src="welcome_imag.jpg" class="wimg">
-             <h2 class="massage">Our Vision To Make Learning convenient with the internet</h2>
-      
-      </div>
-      <ol class="indexlist">
-        <h4 id="content-list">Category List:</h4> 
-        <li><a href="#english" class="listformate border">English</a></li>
-        <li><a href="#Books"class="listformate border">Books</a> </li>
-        <li><a href="#programe"class="listformate border">Programming</a></li>
-        <li><a href="#china"class="listformate border">Chinese Language Learn</a></li>
-        <li><a href="#random"class="listformate border">Different Topics</a></li>
-      </ol> 
+  </section>
+
+  <section class="search-section container" aria-label="Resource search">
+    <div class="search-box"><span>⌕</span><input id="resourceSearch" type="search" placeholder="Search IELTS, HTML, guitar, math..." aria-label="Search resources"><button id="clearSearch" type="button" aria-label="Clear search">×</button></div>
+    <p id="searchStatus" class="search-status" aria-live="polite"></p>
+  </section>
+
+  <section id="categories" class="section container">
+    <div class="section-heading"><div><span class="eyebrow">START HERE</span><h2>Explore categories</h2></div><p>Choose a subject to jump directly to its resources.</p></div>
+    <div class="category-grid" id="categoryGrid"></div>
+  </section>
+
+  <section class="resources-wrap">
+    <div class="container">
+      <div class="section-heading"><div><span class="eyebrow">CURATED LINKS</span><h2>Learning resources</h2></div><p>Open any resource in a new tab and start learning.</p></div>
+      <div id="resourceSections"></div>
+      <div id="noResults" class="no-results" hidden><strong>No resources found.</strong><p>Try a different keyword.</p></div>
     </div>
-  </header>
-   <!--This is a bar for design-->
-    <div class="bar"></div>
-  <!--Header section complete now Main section start-->
-  <div class="main-content">
-    <div class="english">
-     <p id="english">English:</p> 
-      <ol>
-        <li>OpenLearn<a href="https://www.open.edu/openlearn/education-development/english-skills-learning/" target="_blank"><button class="border buton">click me</button></a></li>
-        <li>Langeek<a href="https://langeek.co/" target="_blank"><button class="border buton">click me</button></a></li>
-        <li>IELTS Mok TEst<a href="https://www.ieltstestsimulation.com/" target="_blank"><button class="border buton">click me</button></a></li>
-        <li><a href=""></a></li>
-      </ol>
-    </div>
-      <div class="Book">
-       <p id="Books">Free Book:</p>
-       <ol>
-         <li>Welib<a href="https://welib.org/" target="_blank"><button class="border buton">click me</button></a></li>
-         <li><a href=""></a></li>
-       </ol>
-      </div>
-      <div class="program">
-        <p id="programe">Programming:</p>
-       <ol>
-         <li>Geeks<a href="https://www.geeksforgeeks.org/ " target="_blank"><button class="border buton">click me</button></a></li>
-         <li>Html Learn<a href="https://www.tutorialspoint.com/html/" target="_blank"><button class="border buton">click me</button></a></li>
-         <li>W3 School<a href="https://www.w3schools.com/" target="_blank"><button class="border buton">click me</button></a></li>
-         <li>For CSS design learning<a href="https://www.codepen.io/" target="_blank"><button class="border buton">click me</button></a></li>
-         <li>Any programming Chatsheet<a href="https://www.codewithharry.com/" target="_blank"><button class="border buton">click me</button></a></li>
-         <li>Best Programming Notes<a href="https:goolkicker.com" target="_blank"><button class="border buton">click me</button></a></li>
-         <li>python good book<a href="https://automatetheboringstuff.com" target="_blank"><button class="border buton">click me</button></a></li>
-       </ol>
-      </div>
-      <div class="chinees">
-       <p id="china">Chinese Learning:</p>
-       <ol>
-        <li>For Chinese Language and   hsk<a href="https://mandarinbean.com/" target="_blank"><button class="border buton">click me</button></a></li>
-        <li></li>
-       </ol>
-      </div>
-      <div class="different">
-        <p id="random">Different Topic:</p>
-       <ol>
-        <li>Best For Guitar Learning<a href="https://www.justinguitar.com/guitar-lessons" target="_blank"><button class="border buton">Details</button></a></li>
-        <li>Free internship<a href="https://www.theforage.com/" target="_blank"><button class="border buton">Details</button></a></li>
-        <li>Yt, Insta, Tictok Analizer<a href="https://socialblade.com/" target="_blank"><button class="border buton">Details</button></a></li>
-        <li>Free Online course with certificate<a href="https://www.mindluster.com/" target="_blank"><button class="border buton">Details</button></a></li>
-        <li>Education file can convert note and exam question<a href="https://chatedu.io/en" target="_blank"><button class="border buton">Details</button></a></li>
-        <li>For any type math solve<a href="https://www.symbolab.com/" target="_blank"><button class="border buton">Details</button></a></li>
-        <li><a href=""></a></li>
-       </ol>
-      </div> 
-  </div>
-  <main>
-    
-    </main>
- <footer>
-<div class="foot">
-<div class="footbox1">
-  Unlock Knowledge 
-  <p>2021&#169 All Right Reserved</p>
-</div>
-<div class="footbox2">
-  <a href="index.html" class="border">Home</a>
-  <a href="" class="border">About us</a>
-</div>
-<div class="footbox3">
-  <a href="mailto:tetomandal@gmail.com" class="border">Send mail</a>
-  <a href="" class="border">Linkedin</a>
-  <a href="" class="border">Gethub</a>
-  <a href="" class="border">Instagram</a>
-</div>
-</div>
- </footer>
+  </section>
+
+  <section class="notes-cta"><div class="container notes-cta-inner"><div><span class="eyebrow">YOUR STUDY LIBRARY</span><h2>Looking for notes?</h2><p>Browse topic-wise notes and open the linked study material.</p></div><a class="btn light" href="Note.html">Explore notes →</a></div></section>
+</main>
+
+<footer><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="Logo.jpg" alt=""><span>Unlock Knowledge</span></a><p>Making learning convenient with the internet.</p></div><div><h3>Explore</h3><a href="index.html">Home</a><a href="#categories">Categories</a><a href="Note.html">Notes</a></div><div><h3>Contact</h3><a href="mailto:tetomandal@gmail.com">Send email</a></div></div><div class="container copyright">© <span id="year"></span> Unlock Knowledge. All rights reserved.</div></footer>
+<button class="to-top" aria-label="Back to top">↑</button>
 </body>
-
 </html>
-
-
-
-
-
