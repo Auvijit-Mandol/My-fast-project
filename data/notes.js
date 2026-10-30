@@ -21,12 +21,18 @@ window.NOTE_COLLECTIONS = [
     ]
   },
   {
+    id: "Physics-notes", name: "Physics Research", icon: "▤", tag: "Research Idea",
+    description: "physics And It's Research Related ",
+    topics: [
+      { title: "Physics Collection", description: "Add your Drive link when this collection is ready.", url: "https://drive.google.com/drive/folders/1lldnViUL9IkWzZhFOq8LhwYHSJe1fZVL", keywords: "books reading notes" }
+    ]
+  },
+  {
     id: "programming-notes", name: "Programming", icon: "</>", tag: "Coding",
     description: "Programming notes and study resources.",
     topics: [
       { title: "Programming Notes", description: "Main programming study collection.", url: "https://drive.google.com/drive/folders/1sH0PH5dO_6dDF28f2ZAS5KOIDGhkO4B6", keywords: "programming coding notes" },
       { title: "Programming Chatsheet", description: "Main programming study collection.", url: "https://drive.google.com/drive/folders/1mw_fvgLYdqEsTie5dnCxYu7ZanGLr-Xv", keywords: "programming coding notes 2" }
-      
     ]
   },
   {
@@ -40,7 +46,7 @@ window.NOTE_COLLECTIONS = [
     id: "ielts-notes", name: "IELTS Materials", icon: "◎", tag: "IELTS",
     description: "IELTS preparation collections and study packs.",
     topics: [
-      { title: "1st IELTS Materials", description: "IELTS study material collection.", url: "https://drive.google.com/drive/folders/1RP5ICcWKgHBsWVrMRu_ttRS8qeEKbo-K", keywords: "ielts 1st first materials" },
+     { title: "1st IELTS Materials", description: "IELTS study material collection.", url: "https://drive.google.com/drive/folders/1RP5ICcWKgHBsWVrMRu_ttRS8qeEKbo-K", keywords: "ielts 1st first materials" },
       { title: "3rd IELTS Materials", description: "IELTS study material collection.", url: "https://drive.google.com/drive/folders/1-QFiAlfogBDVLUqO0MfnJVxXVBm5t0-F", keywords: "ielts 3rd third materials" },
       { title: "4th IELTS Materials", description: "IELTS material hosted in Google Docs.", url: "https://docs.google.com/document/d/1ijY3W83PohUpOVYEwUfRA-TsbJTWrfpRPANIYXf5UfY/edit?tab=t.0", keywords: "ielts 4th fourth materials docs" }
     ]
@@ -58,3 +64,4 @@ window.NOTE_COLLECTIONS = [
   ]
 }
 */
+
