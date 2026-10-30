@@ -14,7 +14,7 @@
   <nav class="nav container" aria-label="Main navigation">
     <a class="brand" href="index.html"><img src="Logo.jpg" alt="Unlock Knowledge logo"><span>Unlock Knowledge</span></a>
     <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
-    <div class="nav-links"><a class="active" href="index.html">Home</a><a href="#categories">Index</a><a href="Note.html">Notes</a></div>
+    <div class="nav-links"><a class="active" href="index.html">Home</a><a href="#categories">Categories</a><a href="Resources.html">Resources</a><a href="Note.html">Notes</a><button id="themeBtn" class="theme-btn" type="button" aria-label="Switch between light and dark mode"><span class="ti">🌙</span><span class="tl">Dark mode</span></button></div>
   </nav>
 </header>
 
@@ -25,7 +25,7 @@
         <span class="eyebrow">LEARN • EXPLORE • GROW</span>
         <h1>Learning resources,<br><span>all in one place.</span></h1>
         <p>Unlock Knowledge organizes useful websites, courses, tools and notes so you can spend less time searching and more time learning.</p>
-        <div class="hero-actions"><a class="btn primary" href="#categories">Explore categories</a><a class="btn secondary" href="Note.html">Browse notes</a></div>
+        <div class="hero-actions"><a class="btn primary" href="Resources.html">Explore resources</a><a class="btn secondary" href="#categories">Browse categories</a><a class="btn secondary" href="Note.html">Browse notes</a><button class="btn secondary" id="randomBtn" type="button">🎲 Surprise me</button></div>
         <div class="stats"><div><strong id="categoryCount">0</strong><small>Categories</small></div><div><strong id="resourceCount">0</strong><small>Resources</small></div><div><strong>Free</strong><small>To explore</small></div></div>
       </div>
       <div class="hero-card">
@@ -37,27 +37,25 @@
   </section>
 
   <section class="search-section container" aria-label="Resource search">
-    <div class="search-box"><span>⌕</span><input id="resourceSearch" type="search" placeholder="Search IELTS, HTML, guitar, math..." aria-label="Search resources"><button id="clearSearch" type="button" aria-label="Clear search">×</button></div>
-    <p id="searchStatus" class="search-status" aria-live="polite"></p>
+    <form class="search-box" action="Resources.html" method="get"><span>⌕</span><input name="q" type="search" placeholder="Search IELTS, HTML, guitar, math..." aria-label="Search resources"><button class="go-btn" type="submit">Search</button></form>
   </section>
 
+  <section class="section container" id="featured"><div class="section-heading"><div><span class="eyebrow">EDITOR'S PICKS</span><h2>Top picks</h2></div><p>The best starting points, hand-picked.</p></div><div class="feat-grid" id="featuredGrid"></div></section>
+
+  <section class="section container" id="favSection" hidden><div class="section-heading"><div><span class="eyebrow">SAVED BY YOU</span><h2>My favorites</h2></div><p>Tap ☆ on any resource to save it here. Stored in this browser.</p></div><div class="feat-grid" id="favGrid"></div></section>
+
   <section id="categories" class="section container">
-    <div class="section-heading"><div><span class="eyebrow">START HERE</span><h2>Explore categories</h2></div><p>Choose a subject to jump directly to its resources.</p></div>
+    <div class="section-heading"><div><span class="eyebrow">START HERE</span><h2>Explore categories</h2></div><p>Choose a subject to open its resources.</p></div>
     <div class="category-grid" id="categoryGrid"></div>
   </section>
 
-  <section class="resources-wrap">
-    <div class="container">
-      <div class="section-heading"><div><span class="eyebrow">CURATED LINKS</span><h2>Learning resources</h2></div><p>Open any resource in a new tab and start learning.</p></div>
-      <div id="resourceSections"></div>
-      <div id="noResults" class="no-results" hidden><strong>No resources found.</strong><p>Try a different keyword.</p></div>
-    </div>
-  </section>
+  <section class="section container"><div class="resources-cta"><div><span class="eyebrow">CURATED LINKS</span><h2>Learning resources</h2><p>Browse all <span class="js-total">0</span> websites, tools and courses on one page, with search and filters.</p></div><a class="btn primary" href="Resources.html">Browse all resources →</a></div></section>
 
   <section class="notes-cta"><div class="container notes-cta-inner"><div><span class="eyebrow">YOUR STUDY LIBRARY</span><h2>Looking for notes?</h2><p>Browse topic-wise notes and open the linked study material.</p></div><a class="btn light" href="Note.html">Explore notes →</a></div></section>
 </main>
 
-<footer><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="Logo.jpg" alt=""><span>Unlock Knowledge</span></a><p>Making learning convenient with the internet.</p></div><div><h3>Explore</h3><a href="index.html">Home</a><a href="#categories">Categories</a><a href="Note.html">Notes</a></div><div><h3>Contact</h3><a href="mailto:tetomandal@gmail.com">Send email</a></div></div><div class="container copyright">© <span id="year"></span> Unlock Knowledge. All rights reserved.</div></footer>
+<footer><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="Logo.jpg" alt=""><span>Unlock Knowledge</span></a><p>Making learning convenient with the internet.</p></div><div><h3>Explore</h3><a href="index.html">Home</a><a href="Resources.html">Resources</a><a href="Note.html">Notes</a></div><div><h3>Contact</h3><a href="mailto:tetomandal@gmail.com">Send email</a></div></div><div class="container copyright">© <span id="year"></span> Unlock Knowledge. All rights reserved.</div></footer>
 <button class="to-top" aria-label="Back to top">↑</button>
 </body>
 </html>
+
