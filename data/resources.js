@@ -176,7 +176,9 @@ window.RESOURCE_CATEGORIES = [
     { title: "Job Internationa", tag: "", description: "", url: "https://wellfound.com/", keywords: "" }
     ,{ title: "Student resume ", tag: "", description: "", url: "https://zety.com/blog/student-resume/", keywords: "" },
     { title: "No Experiance resume", tag: "", description: "", url: " https://novoresume.com/career-blog/resume-advice-for-students-with-no-experience", keywords: "" },
-    { title: "No Experiance Resume 2", tag: "", description: "", url: "https://www.myperfectresume.com/career-center/resumes/how-to/first-job-no-experience ", keywords: "" }
+    { title: "No Experiance Resume 2", tag: "", description: "", url: "https://www.myperfectresume.com/career-center/resumes/how-to/first-job-no-experience ", keywords: "" },
+      { title: "All Jobs Telitalk", tag: "Govt Job", description: "Apply for government jobs.", url: "https://alljobs.teletalk.com.bd/", keywords: "" },
+{ title: "saptahik-chakrir-khobor", tag: "Job info", description: "All Govt jobs information", url: "https://bdgovt.info/saptahik-chakrir-khobor/", keywords: "" }
    ]
   },
   {
@@ -199,7 +201,13 @@ window.RESOURCE_CATEGORIES = [
     resources: [
     { title: "Classcentral", tag: "online Course", description: "", url: "https://www.classcentral.com/ ", keywords: "" },
     { title: "lead.academy", tag: "online Course", description: "", url: "https://lead.academy/ ", keywords: "" },
-    { title: "Learn Anything", tag: "Discovery", description: "Type a topic and get the best resources on the internet.", url: "https://learn-anything.xyz/", keywords: "learn topic resources roadmap" }
+    { title: "Learn Anything", tag: "Discovery", description: "Type a topic and get the best resources on the internet.", url: "https://learn-anything.xyz/", keywords: "learn topic resources roadmap" },
+      { title: "LearnVern", tag: "", description: "", url: "https://www.learnvern.com/", keywords: "" },
+{ title: "Alison", tag: "", description: "", url: "https://alison.com/", keywords: "" },
+{ title: "MyGreatLearning", tag: "", description: "", url: "https://www.mygreatlearning.com/", keywords: "" },
+{ title: "DigitalDefynd", tag: "", description: "", url: "https://digitaldefynd.com/", keywords: "" },
+{ title: "The Odin Project", tag: "", description: "", url: "https://www.theodinproject.com/", keywords: "" },
+{ title: "OpenCulture", tag: "", description: "", url: "https://www.openculture.com/", keywords: "" }
     
   ]
 }
