@@ -140,6 +140,8 @@ window.RESOURCE_CATEGORIES = [
       { title: "Floor796", tag: "Explore", description: "A huge animated sci-fi scene to explore.", url: "https://floor796.com/", keywords: "animation explore boredom" },
       { title: "Veck.io", tag: "Game", description: "A fast browser game.", url: "https://veck.io", keywords: "game boredom shooter" },
       { title: "Slow Roads", tag: "Driving", description: "Relaxing endless driving.", url: "https://slowroads.io", keywords: "driving relax game" },
+      { title: "Game", tag: "Driving", description: "Relaxing endless driving.", url: "https://mindblown.ai/games", keywords: "driving relax game" },
+      { title: "Car Games", tag: "Driving", description: "Relaxing endless driving.", url: "https://nfsuz.xyz", keywords: "driving relax game" },
       { title: "BuildIt", tag: "Minecraft", description: "Learn to build anything in Minecraft.", url: "https://builditapp.com", keywords: "minecraft build" },
     { title: "Free Game Asset", tag: "G Asset", description: "", url: " https://itch.io/game-assets/free", keywords: "" },
     { title: "Free Game Asset", tag: "G Asset", description: "", url: "https://craftpix.net/sets/ ", keywords: "" }
@@ -209,6 +211,21 @@ window.RESOURCE_CATEGORIES = [
 { title: "The Odin Project", tag: "", description: "", url: "https://www.theodinproject.com/", keywords: "" },
 { title: "OpenCulture", tag: "", description: "", url: "https://www.openculture.com/", keywords: "" }
     
+  ]
+}
+  ,
+{
+  id: "Electrical Engineering", name: "Electrical Engineering", icon: "⚡", subtitle: "Learn ectrionic componend , build circuit, make robot and electric equepment ",
+  description: "Electrical Engineering learning resources.",
+  resources: [
+    { title: "BenchTwin", tag: "", description: "", url: "https://benchtwin.com/", keywords: "" },
+{ title: "Curvo Studio", tag: "", description: "", url: "https://curvostudio.com/en", keywords: "" },
+{ title: "labXchange", tag: "", description: "", url: "https://www.labxchange.org/", keywords: "" },
+{ title: "Altium", tag: "", description: "", url: "https://www.altium.com/", keywords: "" },
+{ title: "CircFlow", tag: "", description: "", url: "https://circflow.com/", keywords: "" },
+{ title: "Rpath Lake", tag: "", description: "", url: "https://repath-lake.vercel.app/", keywords: "" },
+{ title: "", tag: "", description: "", url: "https://www.tinkered.ai/", keywords: "" }
+  
   ]
 }
 
